@@ -3,5 +3,7 @@
     "**/node_modules": true,
     "**/bower_components": true,
     "**/.sfdx": true
-  }
+  },
+  "salesforcedx-vscode-apex.enable-semantic-errors": false,
+  "salesforcedx-vscode-apex.java.home": "/Library/Java/JavaVirtualMachines/jdk-17.jdk/Contents/Home"
 }
