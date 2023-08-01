@@ -23,3 +23,12 @@ textarea {
 .btn-container > * {
   width: 40%;
 }
+
+.launch-button {
+  width: 40%;
+  font-size: 18px;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: var(--dxp-g-brand);
+  color: var(--dxp-g-brand-contrast);
+}

@@ -1,3 +1,8 @@
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
 h1 {
   text-align: center;
   font-size: 48px;
@@ -9,7 +14,11 @@ img {
 }
 
 .text-container {
-  padding: 10px;
+  margin: 10px;
+}
+
+p {
+  font-size: 18px;
 }
 
 @media only screen and (min-width: 768px) {
@@ -21,6 +30,7 @@ img {
   .text-container {
     min-width: 40ch;
     max-width: 70ch;
+    margin: 0 15px;
   }
 
   .img-container {
