@@ -1,18 +1,21 @@
-<?xml version="1.0" encoding="UTF-8"?>
+<?xml version="1.0" encoding="UTF-8" ?>
 <Network xmlns="http://soap.sforce.com/2006/04/metadata">
     <allowInternalUserLogin>false</allowInternalUserLogin>
     <allowMembersToFlag>false</allowMembersToFlag>
-    <changePasswordTemplate>unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
-    <communityRoles/>
-    <disableReputationRecordConversations>true</disableReputationRecordConversations>
+    <changePasswordTemplate
+  >unfiled$public/CommunityChangePasswordEmailTemplate</changePasswordTemplate>
+    <communityRoles />
+    <disableReputationRecordConversations
+  >true</disableReputationRecordConversations>
     <emailSenderAddress>denjp17@gmail.com</emailSenderAddress>
     <emailSenderName>Portfolio</emailSenderName>
     <enableApexCDNCaching>true</enableApexCDNCaching>
     <enableCustomVFErrorPageOverrides>false</enableCustomVFErrorPageOverrides>
     <enableDirectMessages>true</enableDirectMessages>
-    <enableExperienceBundleBasedSnaOverrideEnabled>true</enableExperienceBundleBasedSnaOverrideEnabled>
+    <enableExperienceBundleBasedSnaOverrideEnabled
+  >true</enableExperienceBundleBasedSnaOverrideEnabled>
     <enableGuestChatter>false</enableGuestChatter>
-    <enableGuestFileAccess>false</enableGuestFileAccess>
+    <enableGuestFileAccess>true</enableGuestFileAccess>
     <enableGuestMemberVisibility>false</enableGuestMemberVisibility>
     <enableImageOptimizationCDN>false</enableImageOptimizationCDN>
     <enableInvitation>false</enableInvitation>
@@ -27,18 +30,23 @@
     <enableTopicAssignmentRules>true</enableTopicAssignmentRules>
     <enableTopicSuggestions>false</enableTopicSuggestions>
     <enableUpDownVote>false</enableUpDownVote>
-    <forgotPasswordTemplate>unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
+    <forgotPasswordTemplate
+  >unfiled$public/CommunityForgotPasswordEmailTemplate</forgotPasswordTemplate>
     <gatherCustomerSentimentData>false</gatherCustomerSentimentData>
-    <headlessForgotPasswordTemplate>unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
+    <headlessForgotPasswordTemplate
+  >unfiled$public/CommunityHeadlessForgotPasswordTemplate</headlessForgotPasswordTemplate>
     <networkMemberGroups>
         <profile>Admin</profile>
     </networkMemberGroups>
     <networkPageOverrides>
-        <changePasswordPageOverrideSetting>Standard</changePasswordPageOverrideSetting>
-        <forgotPasswordPageOverrideSetting>Designer</forgotPasswordPageOverrideSetting>
+        <changePasswordPageOverrideSetting
+    >Standard</changePasswordPageOverrideSetting>
+        <forgotPasswordPageOverrideSetting
+    >Designer</forgotPasswordPageOverrideSetting>
         <homePageOverrideSetting>Designer</homePageOverrideSetting>
         <loginPageOverrideSetting>Designer</loginPageOverrideSetting>
-        <selfRegProfilePageOverrideSetting>Designer</selfRegProfilePageOverrideSetting>
+        <selfRegProfilePageOverrideSetting
+    >Designer</selfRegProfilePageOverrideSetting>
     </networkPageOverrides>
     <picassoSite>Portfolio1</picassoSite>
     <selfRegistration>false</selfRegistration>
@@ -51,5 +59,6 @@
         <standardTab>Chatter</standardTab>
     </tabs>
     <urlPathPrefix>portfoliovforcesite</urlPathPrefix>
-    <welcomeTemplate>unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
+    <welcomeTemplate
+  >unfiled$public/CommunityWelcomeEmailTemplate</welcomeTemplate>
 </Network>

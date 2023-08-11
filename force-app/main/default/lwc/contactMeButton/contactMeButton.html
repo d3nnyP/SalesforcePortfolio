@@ -3,7 +3,7 @@
   <dialog class="contact-dialog">
     <h1>Contact Me</h1>
 
-    <form onsubmit={handleSubmit}>
+    <form onsubmit={handleSubmit} class="contact-me-form">
       <label for="first-name">
         First Name
         <input type="text" class="firstname" name="first-name" />
@@ -11,6 +11,15 @@
       <label for="last-name">
         Last Name
         <input type="text" class="lastname" name="last-name" />
+      </label>
+      <label for="url">
+        LinkedIn Profile
+        <input
+          type="url"
+          class="linkedin"
+          name="linkedIn"
+          placeholder="https://linkedin.com/in/example"
+        />
       </label>
       <label for="company">
         Company
@@ -24,7 +33,7 @@
         cols="40"
         rows="4"
         class="description"
-        placeholder="What woudl you like to talk about?"
+        placeholder="What would you like to talk about?"
       ></textarea>
       <div class="btn-container">
         <input type="submit" />

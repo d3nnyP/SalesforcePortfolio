@@ -4,6 +4,8 @@
 
 package.xml
 AppSwitcher.appMenu
+Lead.All_Leads
+Default_Navigation
 
 # LWC configuration files
 **/jsconfig.json

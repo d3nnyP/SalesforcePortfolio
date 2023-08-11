@@ -3,6 +3,7 @@ global class ContactMeController {
   public static void createLead(
     String firstname,
     String lastname,
+    String linkedin,
     String company,
     String email,
     String description
@@ -11,6 +12,7 @@ global class ContactMeController {
 
     lead.FirstName = firstname;
     lead.LastName = lastname;
+    lead.LinkedIn_Profile__c = linkedin;
     lead.Company = company;
     lead.Email = email;
     lead.Description = description;
