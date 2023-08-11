@@ -5,8 +5,9 @@
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #033f63;
   overflow: hidden;
+  border-radius: 5px;
 }
 
 /* Style the links inside the navigation bar */
@@ -22,7 +23,7 @@
 
 /* Change the color of links on hover */
 .topnav a:hover {
-  background-color: #ddd;
+  background-color: #fedc97;
   color: black;
 }
 
