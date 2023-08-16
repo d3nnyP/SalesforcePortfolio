@@ -9,6 +9,54 @@ h2 {
   margin: 20px 0px;
 }
 
+.certifications {
+  background-color: #009edb;
+}
+
+.b1 {
+  border: 10px solid #009edb;
+  background-color: var(--dxp-g-neutral);
+}
+
+.cert-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.trailhead {
+  background-color: #45c65a;
+  color: #000000;
+}
+
+.b2 {
+  border: 10px solid #45c65a;
+  background-color: var(--dxp-g-neutral);
+}
+
+.trailhead-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
+}
+
+.education {
+  background-color: #4b08a1;
+}
+
+.b3 {
+  border: 10px solid #4b08a1;
+  background-color: var(--dxp-g-neutral);
+}
+
+.certifications,
+.trailhead,
+.education {
+  border-radius: 5px;
+}
+
 /* The grid: Three equal columns that floats next to each other */
 .column {
   float: left;
@@ -47,7 +95,27 @@ h2 {
 /* Closable button inside the image */
 .closebtn {
   float: right;
-  color: white;
+  color: black;
   font-size: 35px;
   cursor: pointer;
+}
+
+lightning-formatted-url {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #0070d2;
+  color: white;
+  border: none;
+  border-radius: 0.25rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.trailhead-profile-button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 1rem;
+  margin-right: 30px;
 }

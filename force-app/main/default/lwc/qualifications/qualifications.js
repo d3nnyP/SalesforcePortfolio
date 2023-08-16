@@ -1,10 +1,12 @@
 import { LightningElement } from "lwc";
-// import IMAGES from "@salesforce/resourceUrl/Images";
+import IMAGES from "@salesforce/resourceUrl/Images";
 
 export default class Projects extends LightningElement {
   i;
   expandGrid;
   tabId;
+  certImage = IMAGES + "/DennisPoirierSalesforceAdminCertWeb.png";
+  trailheadImage = IMAGES + "/DennisTrailheadSuperbadges.png";
   // tabContent;
 
   // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
