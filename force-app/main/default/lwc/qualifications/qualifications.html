@@ -1,95 +1,46 @@
 <template>
-  <h1>My Qualifications</h1>
-  <!-- The grid: three columns -->
-  <div class="row">
-    <div class="column certifications" onclick={openTab} data-tabid="b1">
-      Certifications
+  <div class="outer-container">
+    <h1>My Qualifications</h1>
+    <!-- The grid: three columns -->
+    <div class="tab-container">
+      <div class="row">
+        <div class="column certifications" onclick={openTab} data-tabid="b1">
+          Certifications
+        </div>
+        <div class="column trailhead" onclick={openTab} data-tabid="b2">
+          Trailhead/Superbadges
+        </div>
+        <div class="column education" onclick={openTab} data-tabid="b3">
+          Resume
+        </div>
+      </div>
     </div>
-    <div class="column trailhead" onclick={openTab} data-tabid="b2">
-      Trailhead/Superbadges
-    </div>
-    <div class="column education" onclick={openTab} data-tabid="b3">
-      Education
-    </div>
-  </div>
 
-  <!-- The expanding grid (hidden by default) -->
-  <div id="b1" class="containerTab b1 closed">
-    <!-- If you want the ability to close the container, add a close button -->
-    <span onclick={closeTab} data-closeid="b1" class="closebtn">x</span>
-    <img src={certImage} class="cert-image" />
-  </div>
+    <!-- The expanding grid (hidden by default) -->
+    <div class="tab-content-container">
+      <div id="b1" class="tab-content b1 closed">
+        <!-- If you want the ability to close the container, add a close button -->
+        <span onclick={closeTab} data-closeid="b1" class="closebtn">x</span>
+        <img src={certImage} class="cert-image" />
+      </div>
 
-  <div id="b2" class="containerTab b2 closed">
-    <span onclick={closeTab} data-closeid="b2" class="closebtn">x</span>
-    <img src={trailheadImage} class="trailhead-image" />
-    <div class="trailhead-profile-button-container">
-      <lightning-formatted-url
-        value="https://www.salesforce.com/trailblazer/dennispoirier"
-        target="_blank"
-        class="trailhead-profile-button"
-        label="View Trailhead Profile"
-      ></lightning-formatted-url>
+      <div id="b2" class="tab-content b2 closed">
+        <span onclick={closeTab} data-closeid="b2" class="closebtn">x</span>
+        <img src={trailheadImage} class="trailhead-image" />
+        <div class="trailhead-profile-button-container">
+          <lightning-formatted-url
+            value="https://www.salesforce.com/trailblazer/dennispoirier"
+            target="_blank"
+            class="trailhead-profile-button"
+            label="View Trailhead Profile"
+          ></lightning-formatted-url>
+        </div>
+      </div>
+
+      <div id="b3" class="tab-content b3 closed">
+        <span onclick={closeTab} data-closeid="b3" class="closebtn">x</span>
+        <img src={resumeImage} class="resume-image" />
+      </div>
     </div>
-  </div>
-
-  <div id="b3" class="containerTab b3 closed">
-    <span onclick={closeTab} data-closeid="b3" class="closebtn">x</span>
-    <h2>Education</h2>
-    <p>
-      Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod corrupti
-      perspiciatis, ad praesentium ex recusandae? Est quibusdam neque quidem
-      aspernatur impedit eveniet laboriosam nostrum mollitia quam? Optio, fuga
-      inventore neque nobis veniam odio eaque repudiandae iure doloremque
-      provident consequatur labore commodi illo necessitatibus rem officia quae
-      aliquam tempora enim ea fugit iste. Consequatur dolorum rem fugiat
-      praesentium ducimus ad doloremque doloribus accusamus laboriosam dolores,
-      fugit tempora saepe tempore quibusdam quam fuga repellendus quidem eos,
-      odio necessitatibus dolorem? Repellendus repudiandae, ipsum aliquid
-      numquam vero quos! Dignissimos et doloribus expedita itaque nihil atque
-      aut eos harum, corrupti ab mollitia illo rem ducimus voluptatem veritatis
-      placeat est dolore voluptas, labore animi? Facilis, facere eum odio sint
-      doloribus expedita quae atque! Ad architecto quibusdam optio cupiditate
-      laboriosam adipisci perspiciatis expedita eius ab nobis. Debitis neque
-      explicabo hic rerum, culpa expedita voluptatibus eos rem, eum voluptates
-      vitae eaque architecto, perspiciatis illum quisquam! Maxime doloremque,
-      asperiores ut porro dicta libero mollitia! Quam, repellat, vel temporibus
-      suscipit reprehenderit minus consequuntur odio impedit earum amet quidem
-      provident, nulla sint praesentium enim delectus? Culpa, a. Labore ab
-      voluptatibus minima dicta laboriosam doloremque, beatae porro sunt veniam
-      atque reprehenderit repellat? Molestiae deleniti asperiores ab rerum
-      beatae impedit labore. Est quasi itaque laborum voluptate vitae quae,
-      excepturi commodi doloremque? Architecto quasi laborum nisi provident qui
-      maxime atque, quia ipsa, nam aut vitae reprehenderit? Enim eum deserunt
-      illum numquam, dolor itaque nobis, amet repellat fugiat aperiam, impedit
-      laborum vitae. Doloremque sapiente qui sequi error autem quas non quae
-      dolorem repellat ipsum provident dicta officia eveniet libero corrupti,
-      excepturi natus corporis sunt repellendus nam ea, culpa, minus similique
-      adipisci? Odit aut animi ipsum dolores voluptates dolorem magnam
-      asperiores, repellendus laboriosam ab adipisci sequi. Nesciunt pariatur
-      maiores error possimus sunt commodi id, tenetur voluptatem ex cum facere
-      adipisci aperiam praesentium, non corrupti inventore, hic saepe iure sit!
-      Obcaecati quibusdam officiis accusantium dolores corrupti culpa beatae ad
-      distinctio tempora quod quae error iusto exercitationem ipsum blanditiis
-      quisquam, in magnam totam sequi sed aut. Adipisci, hic. Quas tempore vel
-      modi ratione suscipit magni sint perspiciatis quasi maxime! Consequatur
-      tenetur illo neque adipisci natus odit cum, nobis mollitia molestias esse
-      nihil quo quas voluptates omnis quibusdam itaque harum ratione. Modi,
-      illo? Quis mollitia unde culpa obcaecati! Reprehenderit ab corrupti
-      cupiditate fugiat ducimus ad laborum tempora! Error alias repudiandae
-      ipsa, facilis magni ullam nostrum veritatis eveniet totam numquam beatae
-      fugiat provident, blanditiis at incidunt distinctio sed earum iste ipsam
-      in harum. Sequi consequuntur sit soluta labore laboriosam dolore, tempora
-      et autem repellat suscipit perferendis omnis, cumque vel, necessitatibus
-      temporibus illo. Dolores architecto, officiis, mollitia officia,
-      repudiandae possimus ipsa corporis aperiam atque totam beatae. Rem,
-      consequuntur, expedita dolore molestias unde doloremque ad distinctio
-      voluptate, quia perferendis quae excepturi odio sunt. Voluptates ipsam
-      veniam repudiandae consequatur culpa. Vero tenetur hic magni vitae
-      obcaecati labore tempora quam fuga dignissimos dicta autem temporibus
-      provident, id ullam quia accusamus nemo debitis? Pariatur labore aperiam
-      illo animi voluptates sit minus, id nisi repellendus, eaque vitae ullam
-      expedita quasi veniam atque. Officiis aspernatur recusandae quia!
-    </p>
   </div>
 </template>

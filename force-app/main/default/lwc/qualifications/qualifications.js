@@ -7,6 +7,7 @@ export default class Projects extends LightningElement {
   tabId;
   certImage = IMAGES + "/DennisPoirierSalesforceAdminCertWeb.png";
   trailheadImage = IMAGES + "/DennisTrailheadSuperbadges.png";
+  resumeImage = IMAGES + "/Dennis Poirier Salesforce Resume Portfolio Site.png";
   // tabContent;
 
   // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
@@ -15,7 +16,7 @@ export default class Projects extends LightningElement {
     console.log(this.tabId);
     // this.tabContent = this.template.querySelectorAll(`[data-tabid="${this.tabId}"]`);
 
-    this.expandGrid = this.template.querySelectorAll(".containerTab");
+    this.expandGrid = this.template.querySelectorAll(".tab-content");
 
     for (this.i = 0; this.i < this.expandGrid.length; this.i++) {
       this.expandGrid[this.i].classList.remove("open");

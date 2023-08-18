@@ -1,5 +1,32 @@
+.outer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.tab-container,
+.tab-content-container {
+  background-color: var(--dxp-g-neutral);
+  border-radius: 5px;
+}
+
+.tab-container {
+  margin-bottom: 20px;
+}
+
+.column {
+  margin: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 25px;
+  cursor: pointer;
+  color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
 h1 {
-  font-size: 56px;
+  font-size: 40px;
   text-align: center;
   margin: 25px 0px;
 }
@@ -14,41 +41,23 @@ h2 {
 }
 
 .b1 {
-  border: 10px solid #009edb;
-  background-color: var(--dxp-g-neutral);
-}
-
-.cert-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
-}
-
-.trailhead {
-  background-color: #45c65a;
-  color: #000000;
-}
-
-.b2 {
-  border: 10px solid #45c65a;
-  background-color: var(--dxp-g-neutral);
-}
-
-.trailhead-image {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 60%;
+  border: 3px solid #009edb;
 }
 
 .education {
   background-color: #4b08a1;
 }
 
+.b2 {
+  border: 3px solid #0f511a;
+}
+
+.trailhead {
+  background-color: #0f511a;
+}
+
 .b3 {
-  border: 10px solid #4b08a1;
-  background-color: var(--dxp-g-neutral);
+  border: 3px solid #4b08a1;
 }
 
 .certifications,
@@ -57,15 +66,22 @@ h2 {
   border-radius: 5px;
 }
 
-/* The grid: Three equal columns that floats next to each other */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 50px;
-  text-align: center;
-  font-size: 25px;
-  cursor: pointer;
-  color: white;
+.b1,
+.b2,
+.b3 {
+  border-radius: 5px;
+  background-color: var(--dxp-g-neutral);
+  margin: 0px;
+  padding: 20px;
+}
+
+.cert-image,
+.trailhead-image,
+.resume-image {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 60%;
 }
 
 .open {
@@ -76,41 +92,13 @@ h2 {
   display: none;
 }
 
-.containerTab {
-  padding: 20px;
-  color: white;
-}
-
-.row {
-  margin: 0px 0px 15px 0px;
-}
-
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 /* Closable button inside the image */
 .closebtn {
   float: right;
   color: black;
   font-size: 35px;
   cursor: pointer;
-}
-
-lightning-formatted-url {
-  display: inline-block;
-  padding: 0.5rem 1rem;
-  background-color: #0070d2;
-  color: white;
-  border: none;
-  border-radius: 0.25rem;
-  text-decoration: none;
-  font-size: 1rem;
-  font-weight: bold;
-  cursor: pointer;
+  margin: 0;
 }
 
 .trailhead-profile-button-container {
@@ -118,4 +106,18 @@ lightning-formatted-url {
   justify-content: center;
   margin-top: 1rem;
   margin-right: 30px;
+}
+
+@media only screen and (min-width: 1000px) {
+  .row {
+    display: flex;
+  }
+
+  .column {
+    width: 33.33%;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
 }
