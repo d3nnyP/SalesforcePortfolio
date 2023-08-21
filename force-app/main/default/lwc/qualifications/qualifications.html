@@ -39,7 +39,19 @@
 
       <div id="b3" class="tab-content b3 closed">
         <span onclick={closeTab} data-closeid="b3" class="closebtn">x</span>
-        <img src={resumeImage} class="resume-image" />
+        <img
+          src={resumeImage}
+          onclick={resumeImageClickHandler}
+          class="resume-image"
+        />
+        <!-- The Modal -->
+        <div class="myModal modal">
+          <!-- The Close Button -->
+          <span onclick={closeModal} class="close-modal">x</span>
+
+          <!-- Modal Content (The Image) -->
+          <img class="modal-image" />
+        </div>
       </div>
     </div>
   </div>

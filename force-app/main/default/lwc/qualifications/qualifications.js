@@ -1,4 +1,4 @@
-import { LightningElement } from "lwc";
+import { LightningElement, track } from "lwc";
 import IMAGES from "@salesforce/resourceUrl/Images";
 
 export default class Projects extends LightningElement {
@@ -7,7 +7,10 @@ export default class Projects extends LightningElement {
   tabId;
   certImage = IMAGES + "/DennisPoirierSalesforceAdminCertWeb.png";
   trailheadImage = IMAGES + "/DennisTrailheadSuperbadges.png";
-  resumeImage = IMAGES + "/Dennis Poirier Salesforce Resume Portfolio Site.png";
+  resumeImage = IMAGES + "/DennisPoirierSalesforceResumePortfolioSite.png";
+  @track modal;
+  @track image;
+  @track modalImage;
   // tabContent;
 
   // Hide all elements with class="containerTab", except for the one that matches the clickable grid column
@@ -25,12 +28,27 @@ export default class Projects extends LightningElement {
     this.template.querySelector(`.${this.tabId}`).classList.remove("closed");
     this.template.querySelector(`.${this.tabId}`).classList.add("open");
   }
-  z;
 
   closeTab(event) {
     let tabName = event.target.dataset.closeid;
 
     this.template.querySelector(`.${tabName}`).classList.remove("open");
     this.template.querySelector(`.${tabName}`).classList.add("closed");
+  }
+
+  resumeImageClickHandler() {
+    this.modal = this.template.querySelector(".myModal");
+    this.image = this.template.querySelector(".resume-image");
+    this.modalImage = this.template.querySelector(".modal-image");
+
+    this.modal.classList.remove("modal");
+    this.modal.classList.add("modal-block");
+    this.modalImage.src = this.image.src;
+  }
+
+  closeModal() {
+    this.modal = this.template.querySelector(".myModal");
+    this.modal.classList.remove("modal-block");
+    this.modal.classList.add("modal");
   }
 }
