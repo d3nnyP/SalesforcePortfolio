@@ -1,6 +1,6 @@
 {
   "type": "sfdc_cms__route",
-  "title": "TS-project",
+  "title": "TS Project",
   "contentBody": {
     "activeViewId": "TS_project",
     "configurationTags": [],
