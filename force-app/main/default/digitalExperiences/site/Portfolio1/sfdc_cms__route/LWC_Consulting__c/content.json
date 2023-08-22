@@ -1,0 +1,11 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "LWC Consulting",
+  "contentBody": {
+    "activeViewId": "LWC_Consulting",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-lwc-consulting",
+    "urlPrefix": "lwc-consulting"
+  }
+}

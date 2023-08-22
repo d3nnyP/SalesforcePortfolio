@@ -1,18 +1,66 @@
+<!-- sldsValidatorIgnore -->
 <template>
-  <div class="flip-card">
-    <div class="flip-card-inner">
-      <div class="flip-card-front">
-        <img
-          src="img_avatar.png"
-          alt="Avatar"
-          style="width: 300px; height: 300px"
-        />
+  <!-- MAIN (Center website) -->
+  <div class="container">
+    <h1>Projects</h1>
+
+    <!-- Portfolio Gallery Grid -->
+    <div class="gallery-row">
+      <div class="column">
+        <div class="content">
+          <h2>Big Year Tracker</h2>
+          <div class="image-container">
+            <img src={birdAppImg} alt="Bird App" />
+            <a href="/big-year-tracker" aria-label="Link to Bird App Page">
+              <div class="hover-container">
+                <div class="link-text">View Project</div>
+              </div>
+            </a>
+          </div>
+          <p>
+            A Salesforce app focused on gathering total number of bird
+            observations per birder for the year.
+          </p>
+        </div>
       </div>
-      <div class="flip-card-back">
-        <h1>John Doe</h1>
-        <p>Architect/Engineer</p>
-        <p>We love that guy</p>
+      <div class="column">
+        <div class="content">
+          <h2>LWR/LWC Portfolio Site</h2>
+          <img src={portfolioProjectImg} alt="Portfolio" />
+          <p>
+            Custom Experience Builder site using Lightning Web Components
+            running on the Lightning Web Runtime.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h2>LWC Consulting</h2>
+          <img src={catLwcImg} alt="LWC Image" />
+          <p>
+            A collaborative Lightning Web Component project with a Cat Adoption
+            Non-profit.
+          </p>
+        </div>
+      </div>
+      <div class="column">
+        <div class="content">
+          <h2>Talent Stacker</h2>
+          <img src={talentStackerImg} alt="Talent Stacker Image" />
+          <p>
+            Automate business processes to increase efficiency and to ensure
+            accurate and complete data.
+          </p>
+        </div>
       </div>
     </div>
+
+    <!-- <div class="content">
+    <img src="bear.jpg" alt="Bear">
+    <h2>Some Other Work</h2>
+    <p>Lorem ipsum..</p>
+  </div>
+   -->
+    <!-- END MAIN -->
   </div>
 </template>

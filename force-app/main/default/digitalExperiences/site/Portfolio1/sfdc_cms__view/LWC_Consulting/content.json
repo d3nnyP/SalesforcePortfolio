@@ -1,0 +1,61 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "LWC Consulting",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "sectionConfig": "{\"UUID\":\"448ef592-8201-4e3d-9a22-ea40c341781a\",\"columns\":[{\"UUID\":\"7ac396f4-1cda-4709-b96d-34cdcb323276\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "id": "7ac396f4-1cda-4709-b96d-34cdcb323276",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "448ef592-8201-4e3d-9a22-ea40c341781a",
+              "type": "component"
+            }
+          ],
+          "id": "1bbe8680-2ab5-41dc-b2b4-7dcf6d72296d",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "LWC Consulting",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "b35d334a-0c73-4e68-846f-7601977d7cb9",
+              "type": "component"
+            }
+          ],
+          "id": "79d91790-373f-4c82-921e-a2e154303300",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "3d2c0fcf-2ceb-4226-a875-0ae2e74f9fb7",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-lwc-consulting"
+  }
+}

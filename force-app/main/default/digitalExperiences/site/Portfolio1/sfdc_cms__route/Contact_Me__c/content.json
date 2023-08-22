@@ -1,0 +1,11 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Contact Me",
+  "contentBody": {
+    "activeViewId": "Contact_Me",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-contact-me",
+    "urlPrefix": "contact-me"
+  }
+}

@@ -1,0 +1,69 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Contact Me",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "sectionConfig": "{\"UUID\":\"ac173d45-4431-4f73-a654-6f7d24acda9b\",\"columns\":[{\"UUID\":\"dd3ff32a-c335-4106-8951-e32a7587e840\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:hero",
+                      "id": "490e1eb5-b88a-4f73-a64a-c28a26ba393a",
+                      "type": "component"
+                    }
+                  ],
+                  "id": "dd3ff32a-c335-4106-8951-e32a7587e840",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "ac173d45-4431-4f73-a654-6f7d24acda9b",
+              "type": "component"
+            }
+          ],
+          "id": "943c3591-9bb2-4019-b44f-13a077f7ff9f",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Contact Me",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "b1b7244d-a034-4bb7-a4c6-a16cd3c0611c",
+              "type": "component"
+            }
+          ],
+          "id": "a957b58c-79c8-4028-a51f-8ebf36c6725f",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "7f6bc759-8f75-46ee-b366-7d9524c27dd1",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-contact-me"
+  }
+}

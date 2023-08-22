@@ -1,0 +1,11 @@
+{
+  "type": "sfdc_cms__route",
+  "title": "Big Year Tracker",
+  "contentBody": {
+    "activeViewId": "Big_Year_Tracker",
+    "configurationTags": [],
+    "pageAccess": "UseParent",
+    "routeType": "custom-big-year-tracker",
+    "urlPrefix": "big-year-tracker"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Big Year Tracker",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "sectionConfig": "{\"UUID\":\"5392cdcf-763f-4615-ac3f-e98f2486a4af\",\"columns\":[{\"UUID\":\"7ac96baf-b053-4f3b-81ad-f5f4c96c6510\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "id": "7ac96baf-b053-4f3b-81ad-f5f4c96c6510",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "5392cdcf-763f-4615-ac3f-e98f2486a4af",
+              "type": "component"
+            }
+          ],
+          "id": "cf029ed1-d020-40ab-a0b3-7e28c17c834e",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Big Year Tracker",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "5d83c35f-2703-4019-ace7-e551936241c6",
+              "type": "component"
+            }
+          ],
+          "id": "76599a35-11d0-4bbd-8a5a-5aae443ac23f",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "d2f9b9b2-761e-46cd-9961-f57a0932ffa3",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-big-year-tracker"
+  }
+}

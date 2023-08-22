@@ -1,0 +1,5 @@
+{
+  "apiName": "Projects",
+  "type": "sfdc_cms__view",
+  "path": "views"
+}

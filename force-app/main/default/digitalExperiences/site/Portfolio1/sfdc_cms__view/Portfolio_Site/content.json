@@ -1,0 +1,61 @@
+{
+  "type": "sfdc_cms__view",
+  "title": "Portfolio Site",
+  "contentBody": {
+    "component": {
+      "children": [
+        {
+          "children": [
+            {
+              "attributes": {
+                "backgroundImageConfig": "",
+                "backgroundImageOverlay": "rgba(0,0,0,0)",
+                "sectionConfig": "{\"UUID\":\"9f348a70-3d24-41e3-ad04-187d27fb01fb\",\"columns\":[{\"UUID\":\"0ad07a07-01dc-46c1-b58d-01464d7f3ae8\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":[]}]}"
+              },
+              "children": [
+                {
+                  "id": "0ad07a07-01dc-46c1-b58d-01464d7f3ae8",
+                  "name": "col1",
+                  "title": "Column 1",
+                  "type": "region"
+                }
+              ],
+              "definition": "community_layout:section",
+              "id": "9f348a70-3d24-41e3-ad04-187d27fb01fb",
+              "type": "component"
+            }
+          ],
+          "id": "13250fc5-4907-44cf-a244-cbcd11d75325",
+          "name": "content",
+          "title": "Content",
+          "type": "region"
+        },
+        {
+          "children": [
+            {
+              "attributes": {
+                "customHeadTags": "",
+                "description": "",
+                "pageTitle": "Portfolio Site",
+                "recordId": "{!recordId}"
+              },
+              "definition": "community_builder:seoAssistant",
+              "id": "18019bae-eb67-453b-ba3c-5c0659d7d8c5",
+              "type": "component"
+            }
+          ],
+          "id": "45a7815b-c886-42e4-9789-3182c14cbed5",
+          "name": "sfdcHiddenRegion",
+          "title": "sfdcHiddenRegion",
+          "type": "region"
+        }
+      ],
+      "definition": "community_layout:sldsFlexibleLayout",
+      "id": "ab6cd23c-ac17-4e83-bcec-ce7acdd1d980",
+      "type": "component"
+    },
+    "dataProviders": [],
+    "themeLayoutType": "Inner",
+    "viewType": "custom-portfolio-site"
+  }
+}
