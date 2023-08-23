@@ -43,9 +43,17 @@ button {
   }
   .container {
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  button {
+    padding: 10px 20px;
   }
 
   .call-to-action {
-    margin-top: 10%;
+    /* margin-top: 10%; */
   }
 }

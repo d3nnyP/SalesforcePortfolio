@@ -98,7 +98,9 @@ img {
 }
 
 p {
-  margin-top: 20px;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
