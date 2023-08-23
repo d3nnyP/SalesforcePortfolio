@@ -21,8 +21,11 @@ export default class NavMenu extends LightningElement {
    */
   handleNavMenuClicked() {
     const navMenu = this.template.querySelector(".topnav");
+    const isResponsive = navMenu.classList.contains("responsive");
+    console.log(navMenu.classList);
+    console.log("isResponsive", isResponsive);
 
-    if (this.mediaQuery.matches) {
+    if (this.mediaQuery.matches && isResponsive) {
       navMenu.classList.toggle("responsive");
     }
   }
