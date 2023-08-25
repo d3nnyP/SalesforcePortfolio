@@ -14,6 +14,14 @@
               },
               "children": [
                 {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:bigYearTrackerBlog",
+                      "id": "b8238435-5282-4db3-b5cc-7b7b8a0421c1",
+                      "type": "component"
+                    }
+                  ],
                   "id": "7ac96baf-b053-4f3b-81ad-f5f4c96c6510",
                   "name": "col1",
                   "title": "Column 1",

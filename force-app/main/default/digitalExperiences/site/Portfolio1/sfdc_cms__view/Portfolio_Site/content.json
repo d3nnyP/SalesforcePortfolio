@@ -14,6 +14,14 @@
               },
               "children": [
                 {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:portfolioSiteBlog",
+                      "id": "9c5c455a-f91e-434c-882b-0c1706eadd52",
+                      "type": "component"
+                    }
+                  ],
                   "id": "0ad07a07-01dc-46c1-b58d-01464d7f3ae8",
                   "name": "col1",
                   "title": "Column 1",

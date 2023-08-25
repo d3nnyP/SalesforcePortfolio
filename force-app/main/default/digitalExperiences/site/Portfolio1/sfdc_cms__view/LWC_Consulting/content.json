@@ -14,6 +14,14 @@
               },
               "children": [
                 {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:consultingLWCBlog",
+                      "id": "41114eda-bdcf-4bdf-ad6a-16f75964c12e",
+                      "type": "component"
+                    }
+                  ],
                   "id": "7ac396f4-1cda-4709-b96d-34cdcb323276",
                   "name": "col1",
                   "title": "Column 1",

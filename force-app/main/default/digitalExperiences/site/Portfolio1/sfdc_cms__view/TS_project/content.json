@@ -14,6 +14,14 @@
               },
               "children": [
                 {
+                  "children": [
+                    {
+                      "attributes": {},
+                      "definition": "c:talentStackerProjectBlog",
+                      "id": "92e91a03-68d5-43f7-ae95-f61b27ad42bc",
+                      "type": "component"
+                    }
+                  ],
                   "id": "b5db6ac7-1fb2-4464-b51e-0ac6093d0996",
                   "name": "col1",
                   "title": "Column 1",
