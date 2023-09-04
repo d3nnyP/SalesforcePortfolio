@@ -6,4 +6,21 @@
   text-align: center;
   font-style: italic;
   border-radius: 5px;
+  padding: 10px 10px;
+}
+
+a,
+a:link:not(.slds-button, .slds-dropdown__item > a),
+a:visited:not(.slds-button, .slds-dropdown__item > a) {
+  color: lightskyblue;
+  text-decoration: none;
+  text-shadow: none;
+  transition: none;
+}
+
+a:visited:not(.slds-button) {
+  color: lightskyblue;
+  text-decoration: none;
+  text-shadow: none;
+  transition: none;
 }

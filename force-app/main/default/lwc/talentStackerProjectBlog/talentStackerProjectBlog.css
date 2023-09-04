@@ -93,7 +93,9 @@ h1 {
   font-size: 12px;
   padding: 8px 12px;
   position: absolute;
-  top: 0;
+  bottom: 0;
+  left: 0;
+  top: auto;
 }
 
 /* The dots/bullets/indicators */
@@ -104,7 +106,7 @@ h1 {
   margin: 0 2px;
   background-color: #bbb;
   border-radius: 50%;
-  display: inline-block;
+  display: none;
   transition: background-color 0.6s ease;
 }
 
@@ -130,22 +132,29 @@ h1 {
 
 .youtube-container {
   position: relative;
-  margin: 20px auto;
-  width: 100%;
+  padding-bottom: 56.25%; /* 16:9 */
+  padding-top: 25px;
   height: 0;
-  padding-bottom: 56.25%;
 }
 
 iframe {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
+  top: 20px;
+  left: 10%;
+  width: 80%;
+  height: 80%;
+}
+
+p {
+  margin: 10px;
 }
 
 @media screen and (min-width: 600px) {
   h1 {
     font-size: 40px;
+  }
+
+  .dot {
+    display: inline-block;
   }
 }

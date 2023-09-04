@@ -58,6 +58,7 @@ h2 {
 .content {
   background-color: white;
   border-radius: 5px;
+  padding-top: 10px;
 }
 
 /* Images */
@@ -74,6 +75,7 @@ img {
   opacity: 1;
   transition: 0.5s ease;
   backface-visibility: hidden;
+  border: 0.5px solid black;
 }
 
 .hover-container {
@@ -102,8 +104,18 @@ img {
   border-radius: 5px;
 }
 
+.coming-soon-text {
+  background-color: gray;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+  border-radius: 5px;
+}
+
 p {
   padding: 20px 0px;
+  margin: 0 auto;
+  width: 70%;
 }
 
 /* Responsive layout - makes a two column-layout instead of four columns */
