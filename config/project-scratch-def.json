@@ -1,5 +1,5 @@
 {
-  "orgName": "dennis company",
+  "orgName": "Dennis",
   "edition": "Developer",
   "features": ["Communities", "Sites", "EnableSetPasswordInApi"],
   "settings": {
@@ -8,7 +8,7 @@
     },
     "mobileSettings": {
       "enableS1EncryptedStoragePref2": false
-    }, 
+    },
     "communitiesSettings": {
       "enableNetworksEnabled": true
     },
