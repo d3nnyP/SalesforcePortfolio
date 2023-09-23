@@ -29,8 +29,6 @@ h2 {
 
 .gallery-row {
   margin: 8px -16px;
-  background-color: var(--dxp-g-neutral);
-  border-radius: 5px;
 }
 
 /* Add padding BETWEEN each column (if you want) */
@@ -76,6 +74,7 @@ img {
   transition: 0.5s ease;
   backface-visibility: hidden;
   border: 0.5px solid black;
+  object-fit: cover;
 }
 
 .hover-container {
