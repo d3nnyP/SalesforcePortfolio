@@ -7,7 +7,6 @@
 
 .tab-container,
 .tab-content-container {
-  background-color: var(--dxp-g-neutral);
   border-radius: 5px;
 }
 
@@ -28,7 +27,7 @@
 h1 {
   font-size: 40px;
   text-align: center;
-  margin: 25px 0px;
+  margin: 0px 0px 25px;
 }
 
 h2 {
@@ -70,7 +69,6 @@ h2 {
 .b2,
 .b3 {
   border-radius: 5px;
-  background-color: var(--dxp-g-neutral);
   margin: 0px;
   padding: 20px;
 }
@@ -176,7 +174,7 @@ h2 {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 50px;
   }
 
   .modal-image {

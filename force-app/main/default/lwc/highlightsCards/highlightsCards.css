@@ -1,7 +1,7 @@
 .outer-container {
   max-width: 1200px;
   margin: 0 auto;
-  background-color: var(--dxp-g-neutral);
+  /* background-color: var(--dxp-g-neutral); */
   border-radius: 5px;
   padding: 20px;
 }

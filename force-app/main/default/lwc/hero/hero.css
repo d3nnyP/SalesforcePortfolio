@@ -5,8 +5,6 @@
 
 img {
   width: 100%;
-  /* border: 2px solid black; */
-  border-radius: 7px;
   margin-top: 10px;
 }
 
@@ -40,6 +38,8 @@ button {
   .outer-container {
     display: flex;
     flex-direction: row-reverse;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
   }
   .container {
     width: 50%;

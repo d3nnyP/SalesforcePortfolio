@@ -1,11 +1,16 @@
+.background-image.community_layout-section_section,
+.background-image-overlay.community_layout-section_section {
+  background-color: white;
+}
+
 .outer-container {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Add a black background color to the top navigation */
+/* Add a background color to the top navigation */
 .topnav {
-  background-color: #033f63;
+  /* background-color: #033f63; */
   overflow: hidden;
   border-radius: 5px;
 }
@@ -14,7 +19,7 @@
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: black;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -22,10 +27,10 @@
 }
 
 /* Change the color of links on hover */
-.topnav a:hover {
+/* .topnav a:hover {
   background-color: var(--dxp-g-neutral);
   color: black;
-}
+} */
 
 /* Add an active class to highlight the current page 
 .topnav a.active { 
