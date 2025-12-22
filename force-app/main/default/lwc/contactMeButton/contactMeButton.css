@@ -1,41 +1,162 @@
+/* Form Elements */
 label,
 input,
 textarea {
   display: block;
   width: 100%;
+  font-family: var(--font-family-primary);
 }
 
 label {
   text-align: left;
-  margin-top: 10px;
+  margin-top: var(--spacing-4);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text-primary);
+}
+
+input,
+textarea {
+  margin-top: var(--spacing-2);
+  padding: var(--spacing-3);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-family: var(--font-family-primary);
+  transition: var(--transition-colors);
+  background-color: var(--neutral-white);
+  color: var(--color-text-primary);
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: var(--sf-blue-primary);
+  box-shadow: 0 0 0 3px rgba(1, 118, 211, 0.1);
 }
 
 textarea {
-  margin-top: 10px;
+  resize: vertical;
+  min-height: 100px;
 }
 
+/* Button Container */
 .btn-container {
   display: flex;
   justify-content: space-around;
-  margin-top: 10px;
+  gap: var(--spacing-4);
+  margin-top: var(--spacing-6);
 }
 
 .btn-container > * {
-  width: 40%;
+  flex: 1;
+  max-width: 45%;
 }
 
+/* Modern Gradient Button - Contact Me */
 .launch-button {
   width: 30%;
-  font-size: 18px;
-  border-radius: 5px;
-  margin-top: 5px;
-  background-color: #007aff;
-  color: white;
-  margin-bottom: 10px;
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-primary);
+  border-radius: var(--radius-md);
+  margin-top: var(--spacing-2);
+  margin-bottom: var(--spacing-4);
+  padding: var(--spacing-3) var(--spacing-6);
+  border: none;
+  background: var(--gradient-primary);
+  color: var(--neutral-white);
+  box-shadow: var(--shadow-md);
+  cursor: pointer;
+  transition: var(--transition-all);
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.launch-button:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.launch-button:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Submit and Cancel Buttons */
+.btn-container input[type="submit"],
+.btn-container button {
+  padding: var(--spacing-3) var(--spacing-6);
+  border-radius: var(--radius-md);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  font-family: var(--font-family-primary);
+  cursor: pointer;
+  transition: var(--transition-all);
+  border: none;
+}
+
+.btn-container input[type="submit"] {
+  background: var(--gradient-primary);
+  color: var(--neutral-white);
+  box-shadow: var(--shadow-md);
+}
+
+.btn-container input[type="submit"]:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-2px);
+}
+
+.btn-container input[type="submit"]:active {
+  transform: translateY(0);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-container button {
+  background-color: var(--neutral-light-gray);
+  color: var(--color-text-primary);
+  box-shadow: var(--shadow-sm);
+}
+
+.btn-container button:hover {
+  background-color: var(--neutral-medium-gray);
+  color: var(--neutral-white);
+  box-shadow: var(--shadow-md);
+}
+
+/* Dialog Styling */
+.contact-dialog {
+  padding: var(--spacing-8);
+  border-radius: var(--radius-lg);
+  border: none;
+  box-shadow: var(--shadow-2xl);
+  max-width: 500px;
+  width: 90%;
+  background: var(--glass-background);
+  backdrop-filter: var(--glass-backdrop-blur);
+}
+
+.contact-dialog::backdrop {
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+}
+
+.contact-dialog h1 {
+  font-size: var(--heading-2-size);
+  font-weight: var(--heading-2-weight);
+  color: var(--color-text-primary);
+  margin-bottom: var(--spacing-6);
+  text-align: center;
+}
+
+.contact-me-form {
+  display: flex;
+  flex-direction: column;
 }
 
 @media only screen and (min-width: 768px) {
   .launch-button {
     width: 100%;
+    max-width: 300px;
   }
 }
